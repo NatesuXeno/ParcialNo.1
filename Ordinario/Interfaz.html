@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="Ordinario.js"></script>
+    <script src="Agregar.js"></script>
+</head>
+<body>
+    <form>
+        <p>
+            <label for="id">Introduzca el id del nuevo producto</label>
+            <input type="text" name="id" id="id">
+        </p>
+        <p>
+            <label for="nombre">Introduzca el nombre</label>
+            <input type="text" name="nombre" id="nombre">
+        </p>
+        <p>
+            <label for="precio">Introduzca el precio</label>
+            <input type="text" name="precio" id="precio">
+        </p>
+        <p>
+            <label for="url">Introduzca un Url para el producto</label>
+            <input type="text" name="url" id="url">
+        </p>
+        <button id="Agregar" class="btn btn-primary">Agregar</button>
+    </form>
+    <div class="container">
+        <div class="row">
+            <main id="items" class="col-sm-8 row"></main>
+            <aside class="col-sm-4">
+                <h2>Carrito</h2>
+                <ul id="carrito" class="list-group"></ul>
+                <hr>
+                <p class="text-right">Total: <span id="total"></span>$;</p>
+                <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+            </aside>
+            
+        </div>
+    </div>
+</body>
+</html>
